@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.administrator.salarymanagement">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TwoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BfirstActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BsecondActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".WulianwangActivity" />
+        <activity android:name=".QuesActivity" />
+        <activity android:name="com.example.administrator.question.Ques1Activity" />
+        <activity
+            android:name="com.example.administrator.question.Ques2Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name="com.example.administrator.question.Ques3Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name="com.example.administrator.question.Ques4Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".ChaxunActivity" />
+        <activity
+            android:name=".NewsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name="com.example.administrator.tongzhi.TongzhiActivity" />
+        <activity android:name="com.example.administrator.fenxi.FenxiActivity" />
+        <activity android:name=".JisuanActivity" />
+        <activity android:name="com.example.administrator.fenxi.Fenxi1Activity" />
+        <activity android:name="com.example.administrator.fenxi.Fenxi2Activity" />
+        <activity android:name="com.example.administrator.fenxi.Fenxi3Activity"></activity>
+    </application>
+
+</manifest>

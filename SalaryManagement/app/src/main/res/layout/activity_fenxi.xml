@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <!--整个begin-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <!--头部 begin-->
+
+            <!--头部 end-->
+
+            <!--一个中间部分 begin-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="5dp"
+                    >
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/fenxi1"
+                        android:layout_marginLeft="10dp"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                        <TextView
+                            android:id="@+id/fenxi1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginBottom="3dp"
+                            android:textSize="25dp"
+                            android:textColor="#121212"
+                            android:text="酬金趋势图"/>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/heng"
+                    android:layout_marginTop="2dp"
+                    />
+            </LinearLayout>
+            <!--一个中间部分 end-->
+            <!--一个中间部分 begin-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="5dp"
+                    >
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/fenxi2"
+                        android:layout_marginLeft="10dp"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                        <TextView
+                            android:id="@+id/fenxi2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginBottom="3dp"
+                            android:textSize="25dp"
+                            android:textColor="#121212"
+                            android:text="酬金对比图"/>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/heng"
+                    android:layout_marginTop="2dp"
+                    />
+            </LinearLayout>
+            <!--一个中间部分 end-->
+
+            <!--一个中间部分 begin-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="5dp"
+                    >
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/fenxi3"
+                        android:layout_marginLeft="10dp"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                        <TextView
+                            android:id="@+id/fenxi3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginBottom="3dp"
+                            android:textSize="25dp"
+                            android:textColor="#121212"
+                            android:text="酬金分布图"/>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/heng"
+                    android:layout_marginTop="2dp"
+                    />
+            </LinearLayout>
+            <!--一个中间部分 end-->
+
+
+        </LinearLayout>
+    </ScrollView>
+    <!--整个end-->
+
+    <!--有这部分才能居底部begin-->
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:id="@+id/bottom"
+        android:layout_alignParentBottom="true"
+        android:background="#f5f5f5"
+        >
+
+
+        <!--底部 begin-->
+        <!--一个底部标题begin-->
+        <FrameLayout
+
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" >
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:background="#f5f5f5"
+                    android:textColor="#636363"
+                    android:textSize="20dp"
+                    android:text="首页" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|right"
+
+
+                    android:textColor="@android:color/white"
+                    />
+            </FrameLayout>
+        </FrameLayout>
+
+        <!--一个底部标题end-->
+        <!--一个底部标题begin-->
+        <FrameLayout
+
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" >
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:background="#f5f5f5"
+                    android:textColor="#636363"
+                    android:textSize="20dp"
+                    android:text="消息" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|right"
+                    android:background="@drawable/cricle2"
+                    android:text=" 4 "
+                    android:textColor="@android:color/white"
+                    />
+            </FrameLayout>
+        </FrameLayout>
+
+        <!--一个底部标题end-->
+        <!--一个底部标题begin-->
+        <FrameLayout
+
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" >
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:background="#f5f5f5"
+                    android:textColor="#636363"
+                    android:textSize="20dp"
+                    android:text="管理" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|right"
+
+                    android:textColor="@android:color/white"
+                    />
+            </FrameLayout>
+        </FrameLayout>
+
+        <!--一个底部标题end-->
+        <!--一个底部标题begin-->
+        <FrameLayout
+
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" >
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:background="#f5f5f5"
+                    android:textColor="#636363"
+                    android:textSize="20dp"
+                    android:text="我" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|right"
+
+                    android:textColor="@android:color/white"
+                    />
+            </FrameLayout>
+        </FrameLayout>
+
+        <!--一个底部标题end-->
+        <!--底部 end-->
+    </LinearLayout>
+    <!--有这部分才能居底部 end-->
+</RelativeLayout>

@@ -1,0 +1,877 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.salarymanagement.QuesActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="55dp"
+        android:background="#404040">
+
+        <!-- 可滑动部分 begin-->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="5dp"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:paddingTop="5dp">
+                <!-- 头部 begin-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="#404040"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:paddingTop="5dp" >
+                    <!-- 左边 -->
+                    <LinearLayout
+                        android:id="@+id/ll_qrcode"
+                        android:layout_width="33dp"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:gravity="center" >
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+
+                            android:background="@drawable/wen_jian_jia"
+                            android:contentDescription="@string/app_name" />
+                    </LinearLayout>
+                    <!-- 输入框加图标 -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true">
+
+                        <TextView
+                            android:id="@+id/et_search_input"
+                            android:layout_width="0dp"
+                            android:layout_height="32dp"
+                            android:layout_weight="1"
+
+                            android:hint="@string/search_or_url"
+                            android:paddingLeft="3dp"
+                            android:textColor="#E3E3E3"
+                            android:textSize="18sp"
+                            android:gravity="left|center_vertical"
+                            android:text="薪酬四大报表" />
+                    </LinearLayout>
+                    <!-- 扫码 -->
+                    <LinearLayout
+                        android:id="@+id/ll_ic_go"
+                        android:layout_width="33dp"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:gravity="center" >
+
+                        <ImageView
+                            android:id="@+id/iv_go"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:background="@drawable/left"
+                            android:contentDescription="@string/app_name" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- 头部 end-->
+
+
+                <!-- 头部 begin-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="#404040"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:paddingTop="5dp" >
+                    <!-- 左边 -->
+                    <LinearLayout
+                        android:id="@+id/ll_qrcode1"
+                        android:layout_width="33dp"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:gravity="center" >
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+
+                            android:background="@drawable/wen_jian_jia"
+                            android:contentDescription="@string/app_name" />
+                    </LinearLayout>
+                    <!-- 输入框加图标 -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true">
+
+                        <TextView
+                            android:id="@+id/et_search_input1"
+                            android:layout_width="0dp"
+                            android:layout_height="32dp"
+                            android:layout_weight="1"
+
+                            android:hint="@string/search_or_url"
+                            android:paddingLeft="3dp"
+                            android:textColor="#E3E3E3"
+                            android:textSize="18sp"
+                            android:gravity="left|center_vertical"
+                            android:text="普通客户经理保有" />
+                    </LinearLayout>
+                    <!-- 扫码 -->
+                    <LinearLayout
+                        android:id="@+id/ll_ic_go1"
+                        android:layout_width="33dp"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:gravity="center" >
+
+                        <ImageView
+                            android:id="@+id/iv_go1"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:background="@drawable/left"
+                            android:contentDescription="@string/app_name" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- 头部 end-->
+
+                <!-- 头部 begin-->
+                <LinearLayout
+                    android:id="@+id/see1"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="#404040"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:paddingTop="5dp" >
+                    <!-- 左边 -->
+                    <LinearLayout
+                        android:id="@+id/ll_qrcode2"
+                        android:layout_width="33dp"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:gravity="center" >
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+
+                            android:background="@drawable/wen_jian_jia"
+                            android:contentDescription="@string/app_name" />
+                    </LinearLayout>
+                    <!-- 输入框加图标 -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true">
+
+                        <TextView
+                            android:id="@+id/et_search_input2"
+                            android:layout_width="0dp"
+                            android:layout_height="32dp"
+                            android:layout_weight="1"
+
+                            android:hint="@string/search_or_url"
+                            android:paddingLeft="3dp"
+                            android:textColor="#E3E3E3"
+                            android:textSize="18sp"
+                            android:gravity="left|center_vertical"
+                            android:text="普通客户经理拓展明细" />
+                    </LinearLayout>
+                    <!-- 扫码 -->
+                    <LinearLayout
+                        android:id="@+id/ll_ic_go2"
+                        android:layout_width="33dp"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:gravity="center" >
+
+                        <ImageView
+                            android:id="@+id/iv_go2"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:background="@drawable/left"
+                            android:contentDescription="@string/app_name" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- 头部 end-->
+
+                <!---需要隐藏部分begin-->
+                <LinearLayout
+                    android:id="@+id/hide1"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#DEDEDE"
+                    android:orientation="vertical"
+                    >
+                <!-- 头部 begin-->
+                <LinearLayout
+                    android:id="@+id/see2"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="3dp"
+                    android:paddingTop="5dp" >
+                    <!-- 左边 -->
+                    <LinearLayout
+
+                        android:layout_width="33dp"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:gravity="center" >
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+
+                            android:background="@drawable/circle"
+                            android:contentDescription="@string/app_name" />
+                    </LinearLayout>
+                    <!-- 输入框加图标 -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true">
+
+                        <TextView
+
+                            android:layout_width="0dp"
+                            android:layout_height="32dp"
+                            android:layout_weight="1"
+
+                            android:hint="@string/search_or_url"
+                            android:paddingLeft="3dp"
+                            android:textColor="#4F4F4F"
+                            android:textSize="18sp"
+                            android:gravity="left|center_vertical"
+                            android:text="预付费套卡（原日租卡）" />
+                    </LinearLayout>
+                    <!-- 扫码 -->
+                    <LinearLayout
+
+                        android:layout_width="33dp"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:gravity="center" >
+
+                        <ImageView
+
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:background="@drawable/left2"
+                            android:contentDescription="@string/app_name" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- 头部 end-->
+                    <!--需要隐藏的第二层begin-->
+                    <LinearLayout
+                        android:id="@+id/hide2"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#DEDEDE"
+                        android:orientation="vertical"
+                        android:paddingLeft="25dp"
+
+                        >
+                    <!-- 头部 begin-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="3dp"
+                        android:paddingTop="5dp" >
+                        <!-- 左边 -->
+                        <LinearLayout
+
+                            android:layout_width="33dp"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:gravity="center" >
+
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+
+                                android:background="@drawable/circle"
+                                android:contentDescription="@string/app_name" />
+                        </LinearLayout>
+                        <!-- 输入框加图标 -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="32dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true">
+
+                            <TextView
+
+                                android:layout_width="0dp"
+                                android:layout_height="32dp"
+                                android:layout_weight="1"
+
+                                android:hint="@string/search_or_url"
+                                android:paddingLeft="3dp"
+                                android:textColor="#4F4F4F"
+                                android:textSize="18sp"
+                                android:gravity="left|center_vertical"
+                                android:text="预付费套卡_集团渠道拓展" />
+                        </LinearLayout>
+                        <!-- 扫码 -->
+                        <LinearLayout
+
+                            android:layout_width="33dp"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:gravity="center" >
+
+                            <ImageView
+
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:background="@drawable/left2"
+                                android:contentDescription="@string/app_name" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!-- 头部 end-->
+                    <!-- 头部 begin-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="3dp"
+                        android:paddingTop="5dp" >
+                        <!-- 左边 -->
+                        <LinearLayout
+
+                            android:layout_width="33dp"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:gravity="center" >
+
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+
+                                android:background="@drawable/circle"
+                                android:contentDescription="@string/app_name" />
+                        </LinearLayout>
+                        <!-- 输入框加图标 -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="32dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true">
+
+                            <TextView
+
+                                android:layout_width="0dp"
+                                android:layout_height="32dp"
+                                android:layout_weight="1"
+
+                                android:hint="@string/search_or_url"
+                                android:paddingLeft="3dp"
+                                android:textColor="#4F4F4F"
+                                android:textSize="18sp"
+                                android:gravity="left|center_vertical"
+                                android:text="预付费套卡_客户经理记酬" />
+                        </LinearLayout>
+                        <!-- 扫码 -->
+                        <LinearLayout
+
+                            android:layout_width="33dp"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:gravity="center" >
+
+                            <ImageView
+
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:background="@drawable/left2"
+                                android:contentDescription="@string/app_name" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!-- 头部 end-->
+                    </LinearLayout>
+                    <!--需要隐藏的第二层end-->
+
+                    <!-- 头部 begin-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="3dp"
+                        android:paddingTop="5dp" >
+                        <!-- 左边 -->
+                        <LinearLayout
+
+                            android:layout_width="33dp"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:gravity="center" >
+
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+
+                                android:background="@drawable/circle"
+                                android:contentDescription="@string/app_name" />
+                        </LinearLayout>
+                        <!-- 输入框加图标 -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="32dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true">
+
+                            <TextView
+
+                                android:layout_width="0dp"
+                                android:layout_height="32dp"
+                                android:layout_weight="1"
+
+                                android:hint="@string/search_or_url"
+                                android:paddingLeft="3dp"
+                                android:textColor="#4F4F4F"
+                                android:textSize="18sp"
+                                android:gravity="left|center_vertical"
+                                android:text="集团通讯录" />
+                        </LinearLayout>
+                        <!-- 扫码 -->
+                        <LinearLayout
+
+                            android:layout_width="33dp"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:gravity="center" >
+
+                            <ImageView
+
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:background="@drawable/left2"
+                                android:contentDescription="@string/app_name" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!-- 头部 end-->
+                    <!-- 头部 begin-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="3dp"
+                        android:paddingTop="5dp" >
+                        <!-- 左边 -->
+                        <LinearLayout
+
+                            android:layout_width="33dp"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:gravity="center" >
+
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+
+                                android:background="@drawable/circle"
+                                android:contentDescription="@string/app_name" />
+                        </LinearLayout>
+                        <!-- 输入框加图标 -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="32dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true">
+
+                            <TextView
+
+                                android:layout_width="0dp"
+                                android:layout_height="32dp"
+                                android:layout_weight="1"
+
+                                android:hint="@string/search_or_url"
+                                android:paddingLeft="3dp"
+                                android:textColor="#4F4F4F"
+                                android:textSize="18sp"
+                                android:gravity="left|center_vertical"
+                                android:text="和对讲" />
+                        </LinearLayout>
+                        <!-- 扫码 -->
+                        <LinearLayout
+
+                            android:layout_width="33dp"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:gravity="center" >
+
+                            <ImageView
+
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:background="@drawable/left2"
+                                android:contentDescription="@string/app_name" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!-- 头部 end-->
+                    <!-- 头部 begin-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="3dp"
+                        android:paddingTop="5dp" >
+                        <!-- 左边 -->
+                        <LinearLayout
+
+                            android:layout_width="33dp"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:gravity="center" >
+
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+
+                                android:background="@drawable/circle"
+                                android:contentDescription="@string/app_name" />
+                        </LinearLayout>
+                        <!-- 输入框加图标 -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="32dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true">
+
+                            <TextView
+
+                                android:layout_width="0dp"
+                                android:layout_height="32dp"
+                                android:layout_weight="1"
+
+                                android:hint="@string/search_or_url"
+                                android:paddingLeft="3dp"
+                                android:textColor="#4F4F4F"
+                                android:textSize="18sp"
+                                android:gravity="left|center_vertical"
+                                android:text="4G终端销售" />
+                        </LinearLayout>
+                        <!-- 扫码 -->
+                        <LinearLayout
+
+                            android:layout_width="33dp"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:gravity="center" >
+
+                            <ImageView
+
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:background="@drawable/left2"
+                                android:contentDescription="@string/app_name" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!-- 头部 end-->
+                    <!-- 头部 begin-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="3dp"
+                        android:paddingTop="5dp" >
+                        <!-- 左边 -->
+                        <LinearLayout
+
+                            android:layout_width="33dp"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:gravity="center" >
+
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+
+                                android:background="@drawable/circle"
+                                android:contentDescription="@string/app_name" />
+                        </LinearLayout>
+                        <!-- 输入框加图标 -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="32dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true">
+
+                            <TextView
+
+                                android:layout_width="0dp"
+                                android:layout_height="32dp"
+                                android:layout_weight="1"
+
+                                android:hint="@string/search_or_url"
+                                android:paddingLeft="3dp"
+                                android:textColor="#4F4F4F"
+                                android:textSize="18sp"
+                                android:gravity="left|center_vertical"
+                                android:text="移动终端管理MDM" />
+                        </LinearLayout>
+                        <!-- 扫码 -->
+                        <LinearLayout
+
+                            android:layout_width="33dp"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:gravity="center" >
+
+                            <ImageView
+
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:background="@drawable/left2"
+                                android:contentDescription="@string/app_name" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!-- 头部 end-->
+                    <!-- 头部 begin-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="3dp"
+                        android:paddingTop="5dp" >
+                        <!-- 左边 -->
+                        <LinearLayout
+
+                            android:layout_width="33dp"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:gravity="center" >
+
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+
+                                android:background="@drawable/circle"
+                                android:contentDescription="@string/app_name" />
+                        </LinearLayout>
+                        <!-- 输入框加图标 -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="32dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true">
+
+                            <TextView
+
+                                android:layout_width="0dp"
+                                android:layout_height="32dp"
+                                android:layout_weight="1"
+
+                                android:hint="@string/search_or_url"
+                                android:paddingLeft="3dp"
+                                android:textColor="#4F4F4F"
+                                android:textSize="18sp"
+                                android:gravity="left|center_vertical"
+                                android:text="不限量套餐" />
+                        </LinearLayout>
+                        <!-- 扫码 -->
+                        <LinearLayout
+
+                            android:layout_width="33dp"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:gravity="center" >
+
+                            <ImageView
+
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:background="@drawable/left2"
+                                android:contentDescription="@string/app_name" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!-- 头部 end-->
+
+
+
+                </LinearLayout>
+                <!---需要隐藏部分end-->
+            </LinearLayout>
+        </ScrollView>
+        <!-- 可滑动部分 end-->
+    </LinearLayout>
+
+    <!--有这部分才能居底部begin-->
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/bottom" android:layout_alignParentBottom="true"
+        >
+
+
+        <!--底部 begin-->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="#f5f5f5"
+            android:stretchColumns="0,1,2,3"
+            android:gravity="center_vertical">
+
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="首页" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="消息" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="管理" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="我" />
+            </TableRow>
+
+        </TableLayout>
+        <!--底部 end-->
+    </LinearLayout>
+    <!--有这部分才能居底部 end-->
+</RelativeLayout>

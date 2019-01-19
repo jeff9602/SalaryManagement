@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.salarymanagement.QuesActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="55dp">
+        <!-- 头部 begin-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:paddingTop="5dp" >
+            <!-- 左边 -->
+            <LinearLayout
+                android:id="@+id/ll_qrcode"
+                android:layout_width="33dp"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:gravity="center" >
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+
+                    android:background="@drawable/ic_arrow_left"
+                    android:contentDescription="@string/app_name" />
+            </LinearLayout>
+            <!-- 输入框加图标 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@color/color_gray_f2f2f2"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <EditText
+                    android:id="@+id/et_search_input"
+                    android:layout_width="0dp"
+                    android:layout_height="32dp"
+                    android:layout_weight="1"
+                    android:background="#F8F8FF"
+                    android:hint="@string/search_or_url"
+                    android:paddingLeft="3dp"
+                    android:textColor="@color/color_gray_797979"
+                    android:textColorHint="@color/color_blue_ABB9D6"
+                    android:textSize="14sp"
+                    android:gravity="center" />
+            </LinearLayout>
+            <!-- 扫码 -->
+            <LinearLayout
+                android:id="@+id/ll_ic_go"
+                android:layout_width="33dp"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/iv_go"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/ic_qrcode"
+                    android:contentDescription="@string/app_name" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- 头部 end-->
+        <!-- 可滑动部分 begin-->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+<!--整一个问答部分begin-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp">
+            <TextView
+                android:id="@+id/b1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="如果集团在客户经理A名下，实际拓展人为B，那要什么时间点上完成集团调整才能计酬到B上呢?"
+                android:autoText="false"
+                android:textSize="16dp"
+                android:gravity="left|center_horizontal"
+                android:textColor="#0d0b0b" />
+
+            </LinearLayout>
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp">
+                <ImageView
+                    android:id="@+id/pic1"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:background="@drawable/wenti_p1"
+                    android:contentDescription="@string/app_name" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:text="330人看过"/>
+            </LinearLayout>
+        </LinearLayout>
+        <!--整一个问答部分end-->
+                <!--整一个问答部分begin-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="20dp"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp">
+                        <TextView
+                            android:id="@+id/b2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="怎么是产品生效前3个月内该集团同类产品无非正使用状态？"
+                            android:autoText="false"
+                            android:textSize="16dp"
+                            android:gravity="left|center_horizontal"
+                            android:textColor="#0d0b0b" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp">
+                        <ImageView
+                            android:id="@+id/pic2"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:background="@drawable/wenti_p2"
+                            android:contentDescription="@string/app_name" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="380人看过"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <!--整一个问答部分end-->
+                <!--整一个问答部分begin-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="20dp"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp">
+                        <TextView
+                            android:id="@+id/b3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="营销案延迟生效时指什么？"
+                            android:autoText="false"
+                            android:textSize="16dp"
+                            android:gravity="left|center_horizontal"
+                            android:textColor="#0d0b0b" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp">
+                        <ImageView
+                            android:id="@+id/pic3"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:background="@drawable/wenti_p3"
+                            android:contentDescription="@string/app_name" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="500人看过"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <!--整一个问答部分end-->
+
+                <!--整一个问答部分begin-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="20dp"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp">
+                        <TextView
+                            android:id="@+id/b4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="情况未报备系统会怎样跑数？"
+                            android:autoText="false"
+                            android:textSize="16dp"
+                            android:gravity="left|center_horizontal"
+                            android:textColor="#0d0b0b" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp">
+                        <ImageView
+                            android:id="@+id/pic4"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:background="@drawable/wenti_p4"
+                            android:contentDescription="@string/app_name" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:text="50人看过"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <!--整一个问答部分end-->
+            </LinearLayout>
+        </ScrollView>
+        <!-- 可滑动部分 end-->
+    </LinearLayout>
+
+        <!--有这部分才能居底部begin-->
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/bottom" android:layout_alignParentBottom="true"
+        >
+
+
+        <!--底部 begin-->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="#f5f5f5"
+            android:stretchColumns="0,1,2,3"
+            android:gravity="center_vertical">
+
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="首页" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="消息" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="管理" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="我" />
+            </TableRow>
+
+        </TableLayout>
+        <!--底部 end-->
+    </LinearLayout>
+    <!--有这部分才能居底部 end-->
+</RelativeLayout>

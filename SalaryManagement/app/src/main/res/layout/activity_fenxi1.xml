@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.administrator.fenxi.Fenxi1Activity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <!--一个中间部分 begin-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!--顶部begin-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="5dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="从"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginBottom="3dp"
+                    android:textSize="15dp"
+                    android:textColor="#121212"
+                    />
+                <Spinner
+                    android:layout_width="85dp"
+                    android:layout_height="40dp"
+                    android:entries="@array/year"
+                    >       <!--通过entries属性指定一个下拉列表项，是一个数组资源-->
+                </Spinner>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginBottom="3dp"
+                    android:textSize="15dp"
+                    android:textColor="#121212"
+                    android:text="年"/>
+                <Spinner
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:entries="@array/month"
+                    >       <!--通过entries属性指定一个下拉列表项，是一个数组资源-->
+                </Spinner>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginBottom="3dp"
+                    android:textSize="15dp"
+                    android:textColor="#121212"
+                    android:text="月到"/>
+                <Spinner
+                    android:layout_width="85dp"
+                    android:layout_height="40dp"
+                    android:entries="@array/year"
+                    >       <!--通过entries属性指定一个下拉列表项，是一个数组资源-->
+                </Spinner>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginBottom="3dp"
+                    android:textSize="15dp"
+                    android:textColor="#121212"
+                    android:text="年"/>
+                <Spinner
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:entries="@array/month"
+                    >       <!--通过entries属性指定一个下拉列表项，是一个数组资源-->
+                </Spinner>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginBottom="3dp"
+                    android:textSize="15dp"
+                    android:textColor="#121212"
+                    android:text="月"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <!--一个中间部分 end-->
+        <!--一个中间部分 begin-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="5dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="客户经理群体"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="3dp"
+                    android:textSize="25dp"
+                    android:textColor="#121212"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="3dp"
+                    android:textSize="25dp"
+                    android:textColor="#121212"
+                    android:text="  "/>
+                <Spinner
+                    android:layout_width="150dp"
+                    android:layout_height="35dp"
+                    android:entries="@array/book"
+                    >       <!--通过entries属性指定一个下拉列表项，是一个数组资源-->
+                </Spinner>
+
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/heng"
+                android:layout_marginTop="2dp"
+                />
+        </LinearLayout>
+        <!--一个中间部分 end-->
+        <!--一个中间部分 begin-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="5dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="部门/分公司"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="3dp"
+                    android:textSize="25dp"
+                    android:textColor="#121212"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="3dp"
+                    android:textSize="25dp"
+                    android:textColor="#121212"
+                    android:text="  "/>
+                <Spinner
+                    android:layout_width="150dp"
+                    android:layout_height="35dp"
+                    android:entries="@array/book"
+                    >       <!--通过entries属性指定一个下拉列表项，是一个数组资源-->
+                </Spinner>
+
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/heng"
+                android:layout_marginTop="2dp"
+                />
+        </LinearLayout>
+        <!--一个中间部分 end-->
+        <!--一个中间部分 begin-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2017年人均拓展抽经趋势情况"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="3dp"
+                    android:textSize="15dp"
+                    android:textColor="#4876FF"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <!--一个中间部分 end-->
+
+        <!--一个中间部分 begin  #4169E1-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center_horizontal">
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="5dp"
+                    android:background="@drawable/blue"
+                    android:layout_marginTop="8dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="越秀   "
+
+                    android:layout_marginBottom="3dp"
+                    android:textSize="15dp"
+                    android:textColor="#4876FF"
+                    />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="5dp"
+                    android:background="@drawable/red"
+                    android:layout_marginTop="8dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="大广州"
+
+                    android:layout_marginBottom="3dp"
+                    android:textSize="15dp"
+                    android:textColor="#4876FF"
+                    />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <!--一个中间部分 end-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <lecho.lib.hellocharts.view.LineChartView
+                android:id="@+id/line_chart"
+                android:layout_width="fill_parent"
+                android:layout_height="300dp"
+                android:background="#ffffff"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    </ScrollView>
+
+
+    <!--有这部分才能居底部begin-->
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:id="@+id/bottom"
+        android:layout_alignParentBottom="true"
+        android:background="#f5f5f5"
+        >
+
+
+        <!--底部 begin-->
+        <!--一个底部标题begin-->
+        <FrameLayout
+
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" >
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:background="#f5f5f5"
+                    android:textColor="#636363"
+                    android:textSize="20dp"
+                    android:text="首页" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|right"
+
+
+                    android:textColor="@android:color/white"
+                    />
+            </FrameLayout>
+        </FrameLayout>
+
+        <!--一个底部标题end-->
+        <!--一个底部标题begin-->
+        <FrameLayout
+
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" >
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:background="#f5f5f5"
+                    android:textColor="#636363"
+                    android:textSize="20dp"
+                    android:text="消息" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|right"
+                    android:background="@drawable/cricle2"
+                    android:text=" 4 "
+                    android:textColor="@android:color/white"
+                    />
+            </FrameLayout>
+        </FrameLayout>
+
+        <!--一个底部标题end-->
+        <!--一个底部标题begin-->
+        <FrameLayout
+
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" >
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:background="#f5f5f5"
+                    android:textColor="#636363"
+                    android:textSize="20dp"
+                    android:text="管理" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|right"
+
+                    android:textColor="@android:color/white"
+                    />
+            </FrameLayout>
+        </FrameLayout>
+
+        <!--一个底部标题end-->
+        <!--一个底部标题begin-->
+        <FrameLayout
+
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" >
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:background="#f5f5f5"
+                    android:textColor="#636363"
+                    android:textSize="20dp"
+                    android:text="我" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|right"
+
+                    android:textColor="@android:color/white"
+                    />
+            </FrameLayout>
+        </FrameLayout>
+
+        <!--一个底部标题end-->
+        <!--底部 end-->
+    </LinearLayout>
+    <!--有这部分才能居底部 end-->
+</RelativeLayout>
